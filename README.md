@@ -12,4 +12,4 @@ then run ngrok command to take your backend to internet `ngrok http 3000`
 
 3000  is the port number where your backend is being deployed locally ,
 
-then Ngrok will provide you a API 
+then Ngrok will provide you a API  to interact with your backend
