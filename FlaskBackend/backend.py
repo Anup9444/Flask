@@ -38,7 +38,7 @@ def streams():
             decoder = InputDecoder(abi)
             result = decoder.decode_function(data["input"])
 
-            if result.name == "createInstantTransfer":
+            if result.name != "createInstantTransfer":
                 print("Wrong function to save")
                 return
 
