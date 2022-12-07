@@ -13,8 +13,8 @@ CORS(app)
 
 @app.route('/streams', methods=["POST"])
 def streams():
-    # moralis send two diffrent API one is confirmed is true another is false first we recieve false transactio and after 10
-    # blocks passes after our transaction block it sends us another confirmed is true transaction so we only save confirmed is true transaction
+    # moralis send two diffrent API one is confirmed is true another is false first we recieve false transaction and after 10
+    # blocks passes after our transaction minedblock it sends us another  confirmed is true same transaction so we only save confirmed is true transaction
     # link -----------> https://docs.moralis.io/docs/streams-api-frequently-asked-questions
     if request.json['confirmed']:
         try:
