@@ -25,7 +25,7 @@ def streams():
             print("Provided Signature:", provided_signature)
 
             data = request.data + \
-                "jUQ3ILfqPNO3OKHAlTPqsyc5y9xbVhlOcWtt5GZj6IfN2iykUxDEoP0IpcBp14pM".encode()
+                moralis_api_key.encode()
             signature = Web3.sha3(data).hex()
             print("Generated Signature:", signature)
             if provided_signature != signature:
